@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activites.Calculator.Sodium.LowS.SerumOsmolality">
+
+    <EditText
+        android:id="@+id/serumsodiumID"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="enter  serum sodium (mEq/L)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <EditText
+        android:id="@+id/serumpotassiumID"
+        android:layout_width="271dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="enter serum potassium (mEq/L)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/serumsodiumID"
+        app:layout_constraintStart_toStartOf="@+id/serumsodiumID"
+        app:layout_constraintTop_toBottomOf="@+id/serumsodiumID"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <EditText
+        android:id="@+id/serumglucoseID"
+        android:layout_width="246dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="enter serum glucose (mg/dl)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/serumpotassiumID"
+        app:layout_constraintStart_toStartOf="@+id/serumpotassiumID"
+        app:layout_constraintTop_toBottomOf="@+id/serumpotassiumID"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/resultID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calcID"
+        app:layout_constraintStart_toStartOf="@+id/calcID"
+        app:layout_constraintTop_toBottomOf="@+id/calcID"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <Button
+        android:id="@+id/calcID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ureanitrogenID"
+        app:layout_constraintStart_toStartOf="@+id/ureanitrogenID"
+        app:layout_constraintTop_toBottomOf="@+id/ureanitrogenID"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <EditText
+        android:id="@+id/ureanitrogenID"
+        android:layout_width="227dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="enter BUN (mg/dl)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/serumglucoseID"
+        app:layout_constraintStart_toStartOf="@+id/serumglucoseID"
+        app:layout_constraintTop_toBottomOf="@+id/serumglucoseID"
+        app:layout_constraintVertical_bias="0.089999974" />
+</androidx.constraintlayout.widget.ConstraintLayout>

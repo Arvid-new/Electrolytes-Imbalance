@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Electrolytes Imbalance</string>
+    <string name="title_activity_iron_tree">IronTree</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="hypoNote">NOTE : \n Strategies to improve tolerability: \n●Increasing the interval (eg, to every other day) if not done already.\n●Making dietary modifications (eg, taking iron with food or milk), although this may reduce absorption.\n● Switching to a formulation with a lower amount of elemental iron.\n● Switching from a tablet to a liquid, for which it is easier to titrate the dose</string>
+
+
+
+    <string name="aboutus"><![CDATA[We are a group of students at clinical pharmacy department, faculty of pharmacy, Alexandria University & this application is part of our graduation project under the title of “A Comprehensive Protocol for the Management of Electrolyte Imbalance”. This application provides you with all the electrolytes’ calculators & a stepwise approach for the management of a patient with electrolyte imbalance. For enquiries & suggestions, contact us through:\n
+    \n● Rawan Ahmed Salem ( rawan.asalem@gmail.com )\n\n● Project supervisor: Dr. Enas Abd Elaziz Mohamed ( maskofnoso@gmail.com ) \n\n● Application developer: Mahmoud El Halfawy ( elhalfawymahmoud@gmail.com ) \n\n● Group members:Rawan Ahmed Salem, Reem Mohamed Saber, Salma Khaled El Sayed, Salma Sedik Mohamed, Samar Samir Kamel,Fatema El Zahraa Ibrahim, Carine Maher, Marwa El Halfawy, Mariam Medhat Mehrim, Maryam yasser youssef, Nour Tamer Mohamed,Haidy Essam Maher, Yousrah Yasser Mohamed]]></string>
+</resources>

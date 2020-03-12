@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activites.Calculator.Sodium.HighS.ArdogueFormula">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter age/gender category(correction factor) "
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radiogroupID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/childrenID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Children (0.6)" />
+
+        <RadioButton
+            android:id="@+id/womenID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="women (0.5)" />
+
+        <RadioButton
+            android:id="@+id/menID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="men (0.6)" />
+
+        <RadioButton
+            android:id="@+id/elderlywomenID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="elderly women (0.45)" />
+
+        <RadioButton
+            android:id="@+id/elderlymenID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="elderly men (0.5)" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/infusatenaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroupID"
+        app:layout_constraintVertical_bias="0.060000002">
+
+        <RadioButton
+            android:id="@+id/naclID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3% NACL" />
+
+        <RadioButton
+            android:id="@+id/nsID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.9%(NS)" />
+
+        <RadioButton
+            android:id="@+id/lactateringerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lactate Ringer's
+" />
+
+        <RadioButton
+            android:id="@+id/naclnsID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.45% NACL (1/2 NS)" />
+
+        <RadioButton
+            android:id="@+id/dextroseID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5% dextrose in water (DSW)" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter Infusate Na (mmol/L)"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/infusatenaID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiogroupID"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <RadioGroup
+        android:id="@+id/infusatekID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infusatenaID"
+        app:layout_constraintVertical_bias="0.089999974">
+
+        <RadioButton
+            android:id="@+id/mostfluidslID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Most Fluids(0 mmol/L)" />
+
+        <RadioButton
+            android:id="@+id/lactatedringerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lactated Ringers's" />
+
+        <RadioButton
+            android:id="@+id/ringeracetateID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ringer's Acetate" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter Infusate K (mmol/L)"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/infusatekID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infusatenaID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/serumnaID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter serum Na (mmol/L)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infusatekID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/calcID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate"
+        app:layout_constraintBottom_toBottomOf="@+id/bodyweightID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/serumnaID" />
+
+    <EditText
+        android:id="@+id/bodyweightID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="enter body Weight (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/serumnaID"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="@+id/serumnaID"
+        app:layout_constraintTop_toBottomOf="@+id/serumnaID"
+        app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

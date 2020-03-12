@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.graduatioapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icong"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icong"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutUs"></activity>
+        <activity android:name="Trees.IronHyper" />
+        <activity android:name="Activites.Calculator.Sodium.HighS.ArdogueFormula" />
+        <activity android:name="Activites.Calculator.Sodium.HighS.TotalWterDeficit" />
+        <activity android:name="Activites.Calculator.Sodium.HighS.HighS" />
+        <activity android:name="Activites.Main2Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Activites.Calculator.Sodium.LowS.SodiumDeficit" />
+        <activity android:name="Activites.Calculator.Sodium.LowS.CorrectedSodium" />
+        <activity android:name="Activites.Calculator.Sodium.LowS.SerumOsmolality" />
+        <activity android:name="Activites.Calculator.Sodium.LowS.LowS" />
+        <activity android:name="Activites.Calculator.Iron.TranseferrinSaturation" />
+        <activity android:name="Activites.Calculator.Iron.IvIronDosage" />
+        <activity android:name="Activites.Calculator.Carbonate.HighP.HighBiCarbonate" />
+        <activity android:name="Activites.Calculator.Carbonate.LowP.UrineAnionGap" />
+        <activity android:name="Activites.Calculator.Carbonate.LowP.AnionGap" />
+        <activity android:name="Activites.Calculator.Carbonate.LowP.BicarbonateDeficit" />
+        <activity android:name="Activites.Calculator.Carbonate.Low" />
+        <activity android:name="Activites.Calculator.Potassium.PottasiumCalculator" />
+        <activity android:name="Activites.Calculator.Magnesium.MagnesiumCalculator" />
+        <activity android:name="Activites.Calculator.Calcium.CalciumCalculator" />
+        <activity android:name="Activites.Calculator.ElementsChoice" />
+        <activity android:name="Activites.Iron.IronHypoTree" />
+        <activity android:name="Activites.Iron.IronHypoSelection" />
+        <activity android:name="Activites.Iron.IronHyperSelection" />
+        <activity android:name="Activites.Iron.IronHyperTree" />
+        <activity android:name="Activites.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

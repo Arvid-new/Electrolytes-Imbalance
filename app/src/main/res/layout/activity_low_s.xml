@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activites.Calculator.Sodium.LowS.LowS">
+
+    <Button
+        android:id="@+id/correctedsodiumID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="corrected Sodium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <Button
+        android:id="@+id/serumosmolalityID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serum Osmolality"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/correctedsodiumID"
+        app:layout_constraintStart_toStartOf="@+id/correctedsodiumID"
+        app:layout_constraintTop_toBottomOf="@+id/correctedsodiumID"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:id="@+id/sodiumdeficitID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sodium deficit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/serumosmolalityID"
+        app:layout_constraintStart_toStartOf="@+id/serumosmolalityID"
+        app:layout_constraintTop_toBottomOf="@+id/serumosmolalityID"
+        app:layout_constraintVertical_bias="0.37" />
+</androidx.constraintlayout.widget.ConstraintLayout>

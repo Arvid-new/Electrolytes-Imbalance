@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activites.Calculator.Magnesium.MagnesiumCalculator">
+
+    <EditText
+        android:id="@+id/mgs"
+        android:layout_width="287dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="enter magnesium in serum (mg/dl)"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <EditText
+        android:id="@+id/mgu"
+        android:layout_width="273dp"
+        android:layout_height="56dp"
+        android:ems="10"
+        android:hint="enter magnesium in urine (mg/dl)"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mgs"
+        app:layout_constraintStart_toStartOf="@+id/mgs"
+        app:layout_constraintTop_toBottomOf="@+id/mgs"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/cru"
+        android:layout_width="256dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="enter cratinine in serum (mg/dl)"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/mgu"
+        app:layout_constraintStart_toStartOf="@+id/mgu"
+        app:layout_constraintTop_toBottomOf="@+id/mgu"
+        app:layout_constraintVertical_bias="0.064" />
+
+    <EditText
+        android:id="@+id/crs"
+        android:layout_width="274dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="enter creatinine in urine (mg/dl)"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cru"
+        app:layout_constraintStart_toStartOf="@+id/cru"
+        app:layout_constraintTop_toBottomOf="@+id/cru"
+        app:layout_constraintVertical_bias="0.083" />
+
+    <Button
+        android:id="@+id/calculateID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/crs"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@+id/crs"
+        app:layout_constraintTop_toBottomOf="@+id/crs"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/resultID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/calculateID"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/calculateID"
+        app:layout_constraintTop_toBottomOf="@+id/calculateID"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Norml FEMg= 2.4%"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultID"
+        app:layout_constraintVertical_bias="0.282" />
+</androidx.constraintlayout.widget.ConstraintLayout>

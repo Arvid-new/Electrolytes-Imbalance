@@ -71,7 +71,7 @@ RadioButton radioButton;
         serumNa=Double.parseDouble(serumNaE.getText().toString());
         bodyWeight=Double.parseDouble(bodyWaterE.getText().toString());
         bodyWater=bodyWeight*category;
-        result=bodyWater*(1-(desiredNa-serumNa));
+        result=bodyWater*(1-(desiredNa/serumNa));
         String s="Total Water deficit = "+result+" L";
         resultText.setText(s);
 

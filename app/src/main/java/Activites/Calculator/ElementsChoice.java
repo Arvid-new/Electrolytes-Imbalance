@@ -143,7 +143,7 @@ switch (v.getId()){
     public void setNewBuilder(){
         builder2=new AlertDialog.Builder(ElementsChoice.this);
         builder2.setTitle("choice");
-        builder2.setMessage("1.Total Water Deficit\n2.Ardogue Formula");
+        builder2.setMessage("1.Total Water Deficit\n2.Adrsogue Formula");
         builder2.setPositiveButton("choice 2", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -120,9 +120,10 @@ AlertDialog.Builder builder;
         double changeInSerumNa=((infusateNa+infusateK)-serumNa)/(totalBodyWater+1);
         double sodiumCorrectionRate=(1000*0.5*(totalBodyWater+1))/((infusateNa+infusateK)-serumNa);
         builder.setCancelable(false);
-        builder.setTitle("Ardogue Formula");
+        builder.setTitle("Adrogue Formula");
         String s="Total Body Water = "+totalBodyWater+" L\n"+"Change in Serum Sodium = "+String.format("%.2f",changeInSerumNa)+" mmol/L or mEq/L\n"+
-                "Sodium correction rate = "+String.format("%.2f",sodiumCorrectionRate)+ " ml/hr";
+                "Sodium correction rate = "+String.format("%.2f",sodiumCorrectionRate)+ " ml/hr"+"\n\nExplanation : \n" +
+                "Action to be taken is to decrease or increase Sodium by the value of (Change in Serum Sodium) and according the calculated value of the (Correction Rate).";
         builder.setMessage(s);
         builder.setNegativeButton("return", new DialogInterface.OnClickListener() {
             @Override
